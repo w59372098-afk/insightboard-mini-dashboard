@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="InsightBoard is a responsive sample analytics dashboard with filters, chart, and data table.">
+  <meta name="theme-color" content="#f5f7fb">
+  <title>InsightBoard | Analytics Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to dashboard content</a>
+<div class="app-shell">
+  <aside class="sidebar" aria-label="Application navigation">
+    <a class="brand" href="#" aria-label="InsightBoard home"><span class="brand-logo" aria-hidden="true">i</span><span>insightboard</span></a>
+    <p class="nav-label">WORKSPACE</p>
+    <nav class="side-nav">
+      <a class="nav-item active" href="#overview" aria-current="page"><span aria-hidden="true">▦</span> Overview</a>
+      <a class="nav-item" href="#analytics"><span aria-hidden="true">⌁</span> Analytics</a>
+      <a class="nav-item" href="#records"><span aria-hidden="true">☷</span> Reports</a>
+    </nav>
+    <div class="sidebar-note"><span class="status-dot" aria-hidden="true"></span><div><strong>All systems normal</strong><small>Sample data workspace</small></div></div>
+    <div class="sidebar-footer">INSIGHTBOARD <span>v1.0</span></div>
+  </aside>
+  <main id="main" class="main-content">
+    <header class="topbar"><div><p class="eyebrow">MONDAY, OCTOBER 12, 2026</p><h1>Overview</h1></div><div class="top-actions"><span class="avatar" aria-hidden="true">JD</span><div><strong>Jordan Davis</strong><small>Workspace admin</small></div></div></header>
+    <section id="overview" class="welcome-row"><div><h2>Your business at a glance</h2><p>Track activity, understand trends, and explore your sample dataset.</p></div><label class="period-select">Period <select id="period-filter" aria-label="Filter dashboard by period"><option value="all">All months</option><option value="q3">Q3 only</option><option value="q4">Q4 only</option></select></label></section>
+    <section class="metrics-grid" aria-label="Key performance indicators">
+      <article class="metric-card"><div class="metric-top"><span>Total revenue</span><span class="metric-icon purple" aria-hidden="true">$</span></div><p class="metric-value" id="metric-revenue">$0</p><p class="metric-foot"><span class="trend up">↗ 12.8%</span> <span>vs. previous period</span></p></article>
+      <article class="metric-card"><div class="metric-top"><span>Orders</span><span class="metric-icon blue" aria-hidden="true">↗</span></div><p class="metric-value" id="metric-orders">0</p><p class="metric-foot"><span class="trend up">↗ 8.4%</span> <span>vs. previous period</span></p></article>
+      <article class="metric-card"><div class="metric-top"><span>Customers</span><span class="metric-icon green" aria-hidden="true">♙</span></div><p class="metric-value" id="metric-customers">0</p><p class="metric-foot"><span class="trend up">↗ 5.2%</span> <span>vs. previous period</span></p></article>
+      <article class="metric-card"><div class="metric-top"><span>Conversion rate</span><span class="metric-icon orange" aria-hidden="true">%</span></div><p class="metric-value" id="metric-conversion">0%</p><p class="metric-foot"><span class="trend down">↘ 0.6%</span> <span>vs. previous period</span></p></article>
+    </section>
+    <section id="analytics" class="content-grid">
+      <article class="panel chart-panel"><div class="panel-heading"><div><h2>Revenue overview</h2><p>Monthly revenue performance</p></div><span class="legend"><i aria-hidden="true"></i> Revenue</span></div><div class="chart-wrap"><svg id="revenue-chart" viewBox="0 0 620 250" role="img" aria-labelledby="chart-title chart-desc"><title id="chart-title">Monthly revenue chart</title><desc id="chart-desc">A chart of revenue for the selected months.</desc><g id="chart-grid"></g><polyline id="chart-line" points="" fill="none" stroke="#6658e8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></polyline><g id="chart-points"></g><g id="chart-labels"></g></svg></div><p class="chart-note" id="chart-summary" aria-live="polite">Loading chart data…</p></article>
+      <article class="panel channel-panel"><div class="panel-heading"><div><h2>Sales channels</h2><p>Share of orders</p></div><span class="more-label">This period</span></div><div class="donut" role="img" aria-label="Sales channel distribution: website 54 percent, mobile app 31 percent, partner 15 percent"><div><strong>100%</strong><small>Orders</small></div></div><div class="channel-legend"><p><span class="channel-key website"></span>Website <strong>54%</strong></p><p><span class="channel-key mobile"></span>Mobile app <strong>31%</strong></p><p><span class="channel-key partner"></span>Partner <strong>15%</strong></p></div></article>
+    </section>
+    <section id="records" class="panel records-panel"><div class="panel-heading records-heading"><div><h2>Recent transactions</h2><p>Explore and sort the sample transaction records.</p></div><div class="table-tools"><label class="search-label"><span class="sr-only">Search transactions</span><input id="search-input" type="search" placeholder="Search customer…" autocomplete="off"></label><label><span class="sr-only">Filter status</span><select id="status-filter"><option value="all">All statuses</option><option value="Completed">Completed</option><option value="Pending">Pending</option><option value="Refunded">Refunded</option></select></label></div></div>
+      <div class="table-scroll"><table><caption class="sr-only">Transaction records with sortable customer, date, amount, and status fields</caption><thead><tr><th scope="col"><button class="sort-button" data-sort="id">Order ID ↕</button></th><th scope="col"><button class="sort-button" data-sort="customer">Customer ↕</button></th><th scope="col"><button class="sort-button" data-sort="date">Date ↕</button></th><th scope="col"><button class="sort-button" data-sort="amount">Amount ↕</button></th><th scope="col"><button class="sort-button" data-sort="status">Status ↕</button></th></tr></thead><tbody id="transaction-body"><tr><td colspan="5">Loading transactions…</td></tr></tbody></table></div>
+      <div class="table-footer"><p id="table-status" role="status" aria-live="polite">Loading records…</p><button id="reset-button" class="text-button" type="button">Reset filters</button></div>
+    </section>
+    <footer class="page-footer"><span>© 2026 InsightBoard · Educational demo</span><span>Built with HTML, CSS &amp; JavaScript</span></footer>
+  </main>
+</div>
+</body>
+</html>

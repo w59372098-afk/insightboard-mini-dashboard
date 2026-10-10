@@ -1,0 +1,124 @@
+{
+  "transactions": [
+    {
+      "id": "ORD-1048",
+      "customer": "Maya Patel",
+      "date": "2026-10-10",
+      "amount": 1240.0,
+      "status": "Completed",
+      "month": 10,
+      "customers": 1,
+      "conversion": 3.8
+    },
+    {
+      "id": "ORD-1047",
+      "customer": "Noah Williams",
+      "date": "2026-10-09",
+      "amount": 860.5,
+      "status": "Pending",
+      "month": 10,
+      "customers": 1,
+      "conversion": 3.6
+    },
+    {
+      "id": "ORD-1046",
+      "customer": "Ava Thompson",
+      "date": "2026-10-08",
+      "amount": 2190.0,
+      "status": "Completed",
+      "month": 10,
+      "customers": 1,
+      "conversion": 4.1
+    },
+    {
+      "id": "ORD-1045",
+      "customer": "Liam Chen",
+      "date": "2026-10-06",
+      "amount": 475.0,
+      "status": "Refunded",
+      "month": 10,
+      "customers": 1,
+      "conversion": 3.2
+    },
+    {
+      "id": "ORD-1044",
+      "customer": "Sofia Garcia",
+      "date": "2026-09-29",
+      "amount": 1530.25,
+      "status": "Completed",
+      "month": 9,
+      "customers": 1,
+      "conversion": 4.0
+    },
+    {
+      "id": "ORD-1043",
+      "customer": "Ethan Brooks",
+      "date": "2026-09-24",
+      "amount": 920.0,
+      "status": "Completed",
+      "month": 9,
+      "customers": 1,
+      "conversion": 3.9
+    },
+    {
+      "id": "ORD-1042",
+      "customer": "Amara Okafor",
+      "date": "2026-08-18",
+      "amount": 1815.0,
+      "status": "Pending",
+      "month": 8,
+      "customers": 1,
+      "conversion": 3.7
+    },
+    {
+      "id": "ORD-1041",
+      "customer": "Oliver Smith",
+      "date": "2026-07-22",
+      "amount": 640.0,
+      "status": "Completed",
+      "month": 7,
+      "customers": 1,
+      "conversion": 3.5
+    },
+    {
+      "id": "ORD-1040",
+      "customer": "Priya Nair",
+      "date": "2026-06-17",
+      "amount": 1325.0,
+      "status": "Completed",
+      "month": 6,
+      "customers": 1,
+      "conversion": 3.4
+    },
+    {
+      "id": "ORD-1039",
+      "customer": "Lucas Martin",
+      "date": "2026-05-21",
+      "amount": 780.0,
+      "status": "Refunded",
+      "month": 5,
+      "customers": 1,
+      "conversion": 3.1
+    },
+    {
+      "id": "ORD-1038",
+      "customer": "Zara Ahmed",
+      "date": "2026-04-14",
+      "amount": 990.0,
+      "status": "Completed",
+      "month": 4,
+      "customers": 1,
+      "conversion": 3.6
+    },
+    {
+      "id": "ORD-1037",
+      "customer": "Arjun Rao",
+      "date": "2026-03-08",
+      "amount": 1150.0,
+      "status": "Completed",
+      "month": 3,
+      "customers": 1,
+      "conversion": 3.9
+    }
+  ]
+}
